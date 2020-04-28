@@ -65,18 +65,18 @@ class MealIngredientCreateView (LoginRequiredMixin, TemplateView):
     template_name = 'meal_update.html'
     success_url = '/'
 
-def mealupdate(request):
-    request.session['meal'] = Meal()
-    return render(request = request, template_name = 'meal_update.html')
+# def mealupdate(request):
+#     request.session['meal'] = Meal()
+#     return render(request = request, template_name = 'meal_update.html')
 
-def mealingredientadd(request):
-    if 'meal_ingredients' not in request.session:
-        meal_ingredients = []
-    else:
-        meal_ingredients = request.session['meal_ingredients']
-    meal_ingredient = MealIngredient()
-    meal_ingredients.append(meal_ingredient)
-    request.session['meal_ingredients'] = meal_ingredients
-    if 'ingredient_unit'
-    print(meal_ingredients)
-    return render(request = request, template_name = 'meal_update.html')
+# def mealingredientadd(request):
+#     if 'meal_ingredients' not in request.session:
+#         meal_ingredients = []
+#     else:
+#         meal_ingredients = request.session['meal_ingredients']
+#     meal_ingredient = MealIngredient()
+#     meal_ingredients.append(meal_ingredient)
+#     request.session['meal_ingredients'] = meal_ingredients
+#     if 'ingredient_unit'
+#     print(meal_ingredients)
+#     return render(request = request, template_name = 'meal_update.html')
